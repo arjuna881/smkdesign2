@@ -1,0 +1,581 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <script src="https://kit.fontawesome.com/yourkitid.js" crossorigin="anonymous"></script>
+  </head>
+  <body class="bg-gray-100 overflow-x-hidden">
+    <header class=""> 
+      <!-- HAMBURGER MENU (Mobile only) -->
+<section class="bg-sky-800/100 relative w-full">
+  <aside class="bg-sky-800/100 w-full lg:w-auto px-4 py-4">
+    
+    <!-- Hamburger Button -->
+    <div class="flex justify-between items-center lg:hidden">
+      
+      <h1 class="text-white text-xl font-bold">MENU</h1>
+      <div class="-translate-x-20 md:-translate-x-76 lg:hidden w-7 h-auto">
+      <img src="assets/smkn1-depok-logo.jpg" alt="">
+    </div>
+      <button onclick="toggleMenu()" class="text-white text-2xl focus:outline-none">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>   
+    <section class=" bg-sky-800/100 relative w-full">
+
+     <div id="mobileMenu" class=" absolute lg:static left-0 right-0 top-full bg-sky-800 text-white text-base flex-col gap-4 px-4 py-4 hidden lg:flex lg:justify-center lg:gap-10 z-40">
+  <div class=" whitespace-nowrap flex flex-col lg:flex-row items-start lg:justify-center gap-4 lg:gap-20 text-base lg:text-xl">
+    <div class="hidden absolute left-2 lg:flex lg:w-7 h-auto">
+      <img src="assets/smkn1-depok-logo.jpg" alt="">
+    </div>
+    
+    <a href="index.html" class="text-white hover:text-blue-300">BERANDA</a>
+
+    <a  href="#profilSection"
+        class="relative text-white cursor-pointer hover:text-blue-300">
+      PROFIL
+     
+    </a>
+
+    <a href="#kompetensiSection"
+        class="relative text-white cursor-pointer hover:text-blue-300">
+      Kompetensi Keahlian
+      
+    </a>
+
+    <a  href="#beritaSection"
+        class="relative text-white cursor-pointer hover:text-blue-300">
+      Berita
+    </a>
+
+    <a href="#hubungikamiSection" class="text-white hover:text-blue-300 whitespace-nowrap">
+      HubungiKami
+    </a>
+  </div>
+</aside>
+    
+      
+    
+    </section>
+   </header>
+  <main class="w-full relative">
+
+
+    <!--///////////////////////////////////////////////-->
+  <div class="bg-gray-600 w-full relative">
+    <!-- Gambar -->
+    <img src="assets/sekolah.jpg" class="w-full h-30 object-cover">
+
+    <!-- Kontainer teks -->
+    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center px-4">
+      <h4 class="text-lg lg:text-5x1 sm:text-3xl md:text-3xl text-white font-bold hover:text-sky-400 cursor-pointer">
+        SMK Negeri 1 Depok
+      </h4>
+      <h2 class="mt-2 text-xs sm:text-sm md:text-base text-white font-saint">
+        Menggali potensi penuh siswa di SMK Depok Negeri 1
+      </h2>
+    </div>
+  </div>
+   <section class=" bg-sky-800/100 relative w-full">
+      
+     <aside class=" bg-sky-800/100 w-full lg:w-auto px-4 py-4">
+  <div class="  flex flex-row  items-start lg:justify-start gap-4 lg:gap-10 text-sm lg:text-sm">
+    
+    <div class="flex items-center gap-4 text-white text-2xl">
+  <!-- Facebook -->
+  <a href="https://facebook.com" target="_blank" class="hover:text-blue-500">
+    <i class="fab fa-facebook"></i>
+  </a>
+
+  <!-- Instagram -->
+  <a href="https://instagram.com" target="_blank" class="hover:text-pink-500">
+    <i class="fab fa-instagram"></i>
+  </a>
+
+  <!-- YouTube -->
+  <a href="https://youtube.com" target="_blank" class="hover:text-red-500">
+    <i class="fab fa-youtube"></i>
+  </a>
+
+  <!-- LinkedIn -->
+  <a href="https://linkedin.com" target="_blank" class="hover:text-blue-300">
+    <i class="fab fa-linkedin"></i>
+  </a>
+</div>
+  </div>
+</aside> 
+    </section>
+     <!--///////////////////////////////////////////////-->
+
+
+<!--tentang-->
+<section>
+  <div class="lg:p-10 p-5 m-5 bg-white rounded-lg">
+    <h1 class="text-center font-bold text-base md:text-lg lg:text-xl">
+      Selamat Datang Di Website SMKN 1 Depok
+    </h1>
+  </div>
+
+  <div class="m-10 flex flex-col md:flex-row items-center md:items-start gap-6 md:gap-12 px-4 py-6">
+    <!-- Kolom Teks -->
+    <div class="  lg:p-10 md:w-1/2 text-justify px-4 py-6">
+      <h3 class="md:text-2xl text-lg font-semibold mb-4">Tentang SMK Negeri 1 Depok</h3>
+      <p class="text-base lg:text-lg mb-4">
+        SMK Negeri 1 Depok adalah sebuah Sekolah Menengah Kejuruan (SMK) Negeri pertama di Kota Depok dan telah mendapat status sekolah PK (Pusat Keunggulan) dan status sekolah BLUD (Badan Layanan Umum Daerah).
+      </p>
+      <p class="text-base lg:text-lg">
+        Sekolah ini pada awalnya terdiri dari 2 program studi yaitu Program Studi Mekanik Otomotif dan Program Studi Akomodasi Perhotelan. Namun, sekarang sudah bertambah program studi menjadi 6 program yaitu Permodelan Perangkat Lunak dan Gim, Desain Komunikasi dan Visual, Akomodasi Perhotelan, Akutansi, Teknik Bisnis Sepeda Motor, Teknik Kendaraan Ringan.
+      </p>
+    </div>
+
+    <!-- Kolom Gambar -->
+    <div class="md:w-1/2">
+      <img class="w-full h-auto rounded shadow-md" src="assets/profil.jpg" alt="Profil SMKN 1 Depok">
+    </div>
+  </div>
+</section>
+<!--///////////////////////////////////-->
+
+
+<!--visimisi-->
+<section class="py-10 px-4">
+  <div class="flex flex-col sm:flex-row sm:justify-center sm:gap-5">
+    
+    <div class="transition duration-300 delay-150 hover:scale-105 bg-gray-50 border rounded-xl m-4 p-6 sm:w-1/2 flex flex-col text-left shadow">
+      <div class="flex items-center gap-4 mb-4">
+        <div class="bg-blue-100 p-2 rounded-md">
+          <i class="fa-solid fa-eye text-blue-600"></i>
+        </div>
+        <div>
+          <h2 class="text-lg md:text-2xl font-bold text-gray-800">Visi Sekolah</h2>
+          <div class="w-10 h-1 bg-blue-500 mt-1 rounded"></div>
+        </div>
+      </div>
+      <p class="text-lg md:text-2xl text-gray-700">
+        Menghasilkan lulusan yang unggul dalam IMTAQ dan IPTEK.
+      </p>
+    </div>
+
+    <div class="transition duration-300 delay-150 hover:scale-105 bg-gray-50 border rounded-xl m-4 p-6 sm:w-1/2 flex flex-col text-left shadow">
+      <div class="flex items-center gap-4 mb-4">
+        <div class="bg-blue-100 p-2 rounded-md">
+          <i class="fa-solid fa-building text-blue-600"></i>
+        </div>
+        <div>
+          <h2 class="text-lg md:text-2xl font-bold text-gray-800">Misi Sekolah</h2>
+          <div class="w-10 h-1 bg-blue-500 mt-1 rounded"></div>
+        </div>
+      </div>
+      <p class="text-lg md:text-2xl text-gray-700">
+        Meningkatkan SDM dan menjunjung Pancasila.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<!--PROFIL-->
+<section id="profilSection">
+  <div class="flex sm:-translate-x-7 flex-col sm:flex-row justify-between items-start max-w-7xl mx-auto ">
+    <div class="lg:p-10 md:w-1/2  rounded-sm m-10 flex flex-col max-w-xl  items-center md:items-start gap-3 md:gap-6 px-4 py-6">
+      <h4 class="text-md sm:text-2xl font-semibold">Profil Sekolah</h4>
+      <h2 class="text-sm sm:text-xl text-justify">Didirikan pada tahun 2010, Sekolah telah menjadi pionir dalam inovasi pendidikan.
+         Kampus kami dilengkapi dengan fasilitas modern yang dirancang untuk mendukung pembelajaran kolaboratif dan eksplorasi kreatif.</h2>
+         <h2 class="text-sm sm:text-xl text-justify">Dengan rasio guru dan siswa 15:1, kami memastikan setiap siswa mendapat perhatian dan bimbingan personal.
+           Staf pengajar kami terdiri dari pendidik berpengalaman yang ahli di bidangnya dan berdedikasi terhadap pengembangan siswa.</h2>
+    </div>
+    <div class="-translate-x-2 sm:-translate-x-5 sm:mr-2 grid  grid-cols-2 gap-5 sm:translate-y-5 sm:gap-13 ">
+
+<div class="relative overflow-hidden rounded-xl m-4 w-full sm:w-55 sm:h-55 shadow transition duration-300 delay-150 group">
+  <img src="assets/kelas.jpg" alt="Ruang Kelas" 
+       class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 ease-in-out group-hover:scale-105" />
+  
+  <div class="absolute inset-0  bg-opacity-40"></div>
+  
+  <div class="relative z-10 flex flex-col items-center justify-center h-full text-center text-white p-6">
+    <h2 class="text-lg md:text-2xl font-bold">36</h2>
+    <p class="text-lg md:text-2xl">Ruang Kelas</p>
+  </div>
+</div>
+
+
+
+   <div class=" relative overflow-hidden rounded-xl m-4 w-34 sm:w-full sm:w-55 sm:h-55 shadow transition duration-300 delay-150 group">
+  <img src="assets/laboratorium.jpg" alt="Ruang Kelas" 
+       class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 ease-in-out group-hover:scale-105" />
+  
+  <div class="absolute inset-0  bg-opacity-40"></div>
+  
+  <div class="relative z-10 flex flex-col items-center justify-center h-full text-center text-white p-6">
+    <h2 class="text-lg md:text-2xl font-bold">6</h2>
+    <p class="text-lg md:text-2xl">Laboratorium</p>
+  </div>
+</div>
+
+    <div class="relative overflow-hidden rounded-xl m-4 w-full sm:w-55 sm:h-55 shadow transition duration-300 delay-150 group">
+  <img src="assets/book.jpg" alt="Ruang Kelas" 
+       class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 ease-in-out group-hover:scale-105" />
+  
+  <div class="absolute inset-0  bg-opacity-40"></div>
+  
+  <div class="relative z-10 flex flex-col items-center justify-center h-full text-center text-white p-6">
+    <h2 class="text-lg md:text-2xl font-bold">15,000</h2>
+    <p class="text-lg md:text-2xl">Koleksi Buku</p>
+  </div>
+</div>
+
+    <div class="relative overflow-hidden rounded-xl m-4 w-34 sm:w-full sm:w-55 sm:h-55 shadow transition duration-300 delay-150 group">
+  <img src="assets/sekolah.jpg" alt="Ruang Kelas" 
+       class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 ease-in-out group-hover:scale-105" />
+  
+  <div class="absolute inset-0  bg-opacity-40"></div>
+  
+  <div class="relative z-10 flex flex-col items-center justify-center h-full text-center text-white p-6">
+    <h2 class="text-lg md:text-2xl font-bold">1</h2>
+    <p class="text-lg md:text-2xl">Lapangan Besar</p>
+  </div>
+</div>
+</div>
+    
+  </div>
+</section>
+<!-- Kompetensi Keahlian -->
+<section id="kompetensiSection" class="py-10 ">
+  <div class="bg-white rounded-lg lg:p-10  p-5">
+    <h1 class="text-center font-bold text-xl md:text-2xl lg:text-3xl mb-8">
+      Kompetensi Keahlian
+    </h1>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      
+      <!-- Card PPLG -->
+      <div class="transition duration-300 hover:scale-105 bg-gray-50 border rounded-xl p-5 flex flex-col text-left shadow">
+        <div class="flex flex-col sm:flex-row items-center sm:items-start gap-4 mb-4">
+          <div class="bg-blue-100 p-2 rounded-md">
+            <i class="fa-solid fa-eye text-blue-700 text-xl"></i>
+          </div> 
+          <div class="text-center sm:text-left">
+            <h2 class="text-lg md:text-2xl font-bold text-gray-800">PPLG</h2>
+            <div class="w-10 h-1 bg-blue-500 mt-1 mx-auto sm:mx-0 rounded"></div>
+          </div>
+        </div>
+        <p class="font-serif text-sm sm:text-base text-gray-700 text-center sm:text-left">
+          adalah program keahlian di Sekolah Menengah Kejuruan (SMK) yang fokus pada pengembangan perangkat lunak dan permainan.
+        </p>
+      </div>
+
+      <!-- CARD DKV -->
+      <div class="transition duration-300 hover:scale-105 bg-gray-50 border rounded-xl p-5 flex flex-col text-left shadow">
+        <div class="flex flex-col sm:flex-row items-center sm:items-start gap-4 mb-4">
+          <div class="bg-blue-100 p-2 rounded-md">
+            <i class="fa-solid fa-eye text-blue-700 text-xl"></i>
+          </div> 
+          <div class="text-center sm:text-left">
+            <h2 class="text-lg md:text-2xl font-bold text-gray-800">DKV</h2>
+            <div class="w-12 h-1 bg-blue-500 mt-1 mx-auto sm:mx-0 rounded"></div>
+          </div>
+        </div>
+        <p class="font-serif text-sm sm:text-base text-gray-700 text-center sm:text-left">
+          DKV adalah bidang ilmu dan praktik yang mempelajari cara menyampaikan pesan secara visual agar mudah dipahami dan menarik perhatian audiens. Ini adalah perpaduan antara seni, desain, komunikasi, dan teknologi.
+        </p>
+      </div>
+
+      <!-- CARD Akomodasi Perhotelan -->
+      <div class="transition duration-300 hover:scale-105 bg-gray-50 border rounded-xl p-5 flex flex-col text-left shadow">
+        <div class="flex flex-col sm:flex-row items-center sm:items-start gap-4 mb-4">
+          <div class="bg-blue-100 p-2 rounded-md">
+            <i class="fa-solid fa-eye text-blue-700 text-xl"></i>
+          </div> 
+          <div class="text-center sm:text-left">
+            <h2 class="text-lg md:text-xl font-bold text-gray-800">Akomodasi Perhotelan</h2>
+            <div class="w-16 h-1 bg-blue-500 mt-1 mx-auto sm:mx-0 rounded"></div>
+          </div>
+        </div>
+        <p class="font-serif text-sm sm:text-base text-gray-700 text-center sm:text-left">
+          Akomodasi Perhotelan adalah jurusan di SMK yang mempelajari pelayanan, pengelolaan, dan operasional hotel serta akomodasi lainnya, seperti villa, resort, atau guest house.
+        </p>
+      </div>
+
+      <!-- CARD Akuntansi -->
+      <div class="transition duration-300 hover:scale-105 bg-gray-50 border rounded-xl p-5 flex flex-col text-left shadow">
+        <div class="flex flex-col sm:flex-row items-center sm:items-start gap-4 mb-4">
+          <div class="bg-blue-100 p-2 rounded-md">
+            <i class="fa-solid fa-eye text-blue-700 text-xl"></i>
+          </div> 
+          <div class="text-center sm:text-left">
+            <h2 class="text-lg md:text-2xl font-bold text-gray-800">Akuntansi</h2>
+            <div class="w-16 h-1 bg-blue-500 mt-1 mx-auto sm:mx-0 rounded"></div>
+          </div>
+        </div>
+        <p class="font-serif text-sm sm:text-base text-gray-700 text-center sm:text-left">
+          Akuntansi adalah jurusan yang mempelajari pencatatan, pengolahan, dan pelaporan keuangan suatu organisasi atau perusahaan.
+        </p>
+      </div>
+
+      <!-- CARD TBSM -->
+      <div class="transition duration-300 hover:scale-105 bg-gray-50 border rounded-xl p-5 flex flex-col text-left shadow">
+        <div class="flex flex-col sm:flex-row items-center sm:items-start gap-4 mb-4">
+          <div class="bg-blue-100 p-2 rounded-md">
+            <i class="fa-solid fa-eye text-blue-700 text-xl"></i>
+          </div> 
+          <div class="text-center sm:text-left">
+            <h2 class="text-lg md:text-2xl font-bold text-gray-800">TBSM</h2>
+            <div class="w-10 h-1 bg-blue-500 mt-1 mx-auto sm:mx-0 rounded"></div>
+          </div>
+        </div>
+        <p class="font-serif text-sm sm:text-base text-gray-700 text-center sm:text-left">
+          Teknik dan Bisnis Sepeda Motor adalah jurusan yang mempelajari perawatan, perbaikan, serta pengelolaan usaha di bidang sepeda motor.
+        </p>
+      </div>
+
+      <!-- CARD TKRO -->
+      <div class="transition duration-300 hover:scale-105 bg-gray-50 border rounded-xl p-5 flex flex-col text-left shadow">
+        <div class="flex flex-col sm:flex-row items-center sm:items-start gap-4 mb-4">
+          <div class="bg-blue-100 p-2 rounded-md">
+            <i class="fa-solid fa-eye text-blue-700 text-xl"></i>
+          </div> 
+          <div class="text-center sm:text-left">
+            <h2 class="text-lg md:text-2xl font-bold text-gray-800">TKRO</h2>
+            <div class="w-12 h-1 bg-blue-500 mt-1 mx-auto sm:mx-0 rounded"></div>
+          </div>
+        </div>
+        <p class="font-serif text-sm sm:text-base text-gray-700 text-center sm:text-left">
+          Teknik Kendaraan Ringan Otomotif adalah jurusan yang mempelajari perawatan dan rekayasa teknis kendaraan roda empat (mobil).
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+ <section id="beritaSection" class="py-10 px-4">
+  <div class="max-w-7xl mx-auto flex flex-col gap-10">
+    
+    
+    <div class="px-4 sm:px-6 lg:px-10 flex flex-col gap-3 sm:gap-5 text-start sm:text-center lg:text-start">
+      <div class="flex items-center space-x-2 justify-start sm:justify-center lg:justify-start">
+        <div class="w-4 h-0.5 bg-blue-400"></div>
+        <span class="text-blue-500 font-semibold tracking-wide">BERITA</span>
+      </div>
+      <a href="berita.html" class="text-gray-900 text-2xl sm:text-3xl lg:text-5xl font-semibold hover:text-blue-500 transition">
+        Berita SMKN 1 DEPOK
+      </a>
+    </div>
+
+    
+    <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+      
+      <!-- Card 1 -->
+      <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition duration-300">
+        <img class="w-full h-48 object-cover " src="assets/berita1.jpg" alt="Berita Terbaru">
+        <div class="p-5 space-y-2">
+          <div class="text-sm text-blue-500 font-semibold">28 Juli 2025</div>
+          <h2 class="text-xl font-bold text-gray-800 hover:text-blue-600 transition">
+            PKKS 2021
+          </h2>
+          <p class="text-gray-600 text-sm">
+            Kegiatan siswa dalam mengikuti lomba inovasi tingkat nasional membuahkan hasil yang membanggakan...
+          </p>
+          <a href="BERITA/card1.html" class="inline-block mt-2 text-sm text-blue-500 hover:underline font-medium">
+            Selengkapnya →
+          </a>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition duration-300">
+        <img class="w-full h-48 object-cover" src="assets/berita2.jpg" alt="Berita Terbaru">
+        <div class="p-5 space-y-2">
+          <div class="text-sm text-blue-500 font-semibold">28 Juli 2025</div>
+          <h2 class="text-xl font-bold text-gray-800 hover:text-blue-600 transition">
+            Rapat Luring Dalam Kantor
+          </h2>
+          <p class="text-gray-600 text-sm">
+            Kegiatan siswa dalam mengikuti lomba inovasi tingkat nasional membuahkan hasil yang membanggakan...
+          </p>
+          <a href="BERITA/card2.html" class="inline-block mt-2 text-sm text-blue-500 hover:underline font-medium">
+            Selengkapnya →
+          </a>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition duration-300">
+        <img class="w-full h-48 object-cover" src="assets/berita3.jpg" alt="Berita Terbaru">
+        <div class="p-5 space-y-2">
+          <div class="text-sm text-blue-500 font-semibold">28 Juli 2025</div>
+          <h2 class="text-xl font-bold text-gray-800 hover:text-blue-600 transition">
+            Pelatihan penerapan kinerja industri
+          </h2>
+          <p class="text-gray-600 text-sm">
+            Kegiatan siswa dalam mengikuti lomba inovasi tingkat nasional membuahkan hasil yang membanggakan...
+          </p>
+          <a href="BERITA/card3.html" class="inline-block mt-2 text-sm text-blue-500 hover:underline font-medium">
+            Selengkapnya →
+          </a>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition duration-300">
+        <img class="w-full h-48 object-cover" src="assets/berita4.jpg" alt="Berita Terbaru">
+        <div class="p-5 space-y-2">
+          <div class="text-sm text-blue-500 font-semibold">28 Juli 2025</div>
+          <h2 class="text-xl font-bold text-gray-800 hover:text-blue-600 transition">
+            Workshop PKDK
+          </h2>
+          <p class="text-gray-600 text-sm">
+            Kegiatan siswa dalam mengikuti lomba inovasi tingkat nasional membuahkan hasil yang membanggakan...
+          </p>
+          <a href="BERITA/card4.html" class="inline-block mt-2 text-sm text-blue-500 hover:underline font-medium">
+            Selengkapnya →
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- Section Hubungi Kami -->
+<section id="hubungikamiSection" class="py-16 bg-white">
+  <div class="max-w-7xl mx-auto px-4">
+    <h2 class="text-3xl font-bold text-center text-gray-800 mb-10">Hubungi Kami</h2>
+
+    <div class="flex flex-col lg:flex-row gap-10">
+      <!-- Form Kontak -->
+      <div class="w-full lg:w-1/2 bg-white shadow-md rounded-lg p-6 space-y-4">
+        <div>
+          <label class="block text-gray-700 font-medium mb-1" for="nama">Nama</label>
+          <input type="text" id="nama" class="w-full px-4 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Masukkan nama Anda" />
+        </div>
+        <div>
+          <label class="block text-gray-700 font-medium mb-1" for="email">Email</label>
+          <input type="email" id="email" class="w-full px-4 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Masukkan email Anda" />
+        </div>
+        <div>
+          <label class="block text-gray-700 font-medium mb-1" for="pesan">Pesan</label>
+          <textarea id="pesan" rows="4" class="w-full px-4 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Tulis pesan Anda di sini..."></textarea>
+        </div>
+        <button class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded font-semibold transition">Kirim</button>
+      </div>
+
+      <!-- Google Maps -->
+      <div class="w-full lg:w-1/2 h-96 rounded-lg overflow-hidden shadow-md">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.314169390682!2d106.82305171413616!3d-6.221897062670328!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f1c62c07bdf1%3A0x258aefb17990fa3!2sSMK%20Negeri%201%20Depok!5e0!3m2!1sid!2sid!4v1693548494171!5m2!1sid!2sid"
+          width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+<button onclick="scrollToTop()" id="scrollTopBtn"
+  class="fixed bottom-6 right-6 z-50 bg-green-600 text-white p-3 rounded-full shadow-lg hover:bg-green-700 transition-opacity duration-300 opacity-0">
+  <i class="fas fa-arrow-up"></i>
+</button>
+</main>
+<!-- Footer -->
+<footer class="bg-gray-800 text-white py-8 mt-10">
+  <div class="max-w-7xl mx-auto px-4">
+    <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+      <div class="lg:translate-y-5 text-center md:text-left">
+        <h3 class="sm:-translate-y-4 lg:-translate-y-0 lg:text-4xl text-xl font-bold mb-2">SMKN 1 Depok</h3>
+        <div class="grid gap-4 grid-cols-1 lg:grid-cols-1 sm:grid-cols-2">
+  <div class="flex items-start gap-2">
+    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-white mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 11c1.66 0 3-1.34 3-3S13.66 5 12 5s-3 1.34-3 3 1.34 3 3 3z" />
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 22s8-4.5 8-10a8 8 0 10-16 0c0 5.5 8 10 8 10z" />
+    </svg>
+    <p class="text-gray-300 scale-90 lg:text-xl sm:scale-100 sm:text-sm hover:text-yellow-300">Jl. Nusantara Raya No.317, Beji, Kota Depok, Jawa Barat</p>
+  </div>
+  <div class="flex items-start gap-2">
+    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-white mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 12H8m8 0l-4-4m4 4l-4 4M4 6h16M4 18h16" />
+    </svg>
+    <p class="text-gray-300 scale-90 lg:text-xl sm:scale-100 sm:text-sm hover:text-yellow-300">Email: info@smkn1depok.sch.id</p>
+  </div>
+  <div class="flex items-start gap-2">
+    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-white mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.6a1 1 0 011 .8l1.1 5.4a1 1 0 01-.3.9L9.4 13.6a11.05 11.05 0 005 5l3.5-1.9a1 1 0 01.9-.3l5.4 1.1a1 1 0 01.8 1V19a2 2 0 01-2 2h-1C9.4 21 3 14.6 3 7V6a2 2 0 010-1z" />
+    </svg>
+    <p class="text-gray-300 scale-90 lg:text-xl sm:scale-100 sm:text-sm  hover:text-yellow-300">Telepon: (021) 1234 5678</p>
+  </div>
+  <div class="flex items-start gap-2">
+    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-white mt-1" fill="currentColor" viewBox="0 0 24 24">
+      <path d="M19.6 3H4.4C3.1 3 2 4.1 2 5.4v13.2C2 19.9 3.1 21 4.4 21h15.2c1.3 0 2.4-1.1 2.4-2.4V5.4C22 4.1 20.9 3 19.6 3zm-7.6 14V7l6 5-6 5z" />
+    </svg>
+    <p class="text-gray-300 scale-90 lg:text-xl sm:scale-100 sm:text-sm hover:text-yellow-300">YouTube: OfficialSMKN1Depok</p>
+  </div>
+</div>
+      </div>
+
+      <!-- Navigasi Footer -->
+      <div class="lg:translate-y-5 text-center md:text-right space-y-2">
+        <h4 class="font-semibold lg:text-xl">Navigasi</h4>
+        <ul class="text-gray-300 text-sm space-y-1">
+          <li><a href="index.html" class="font-sans  lg:text-lg hover:underline">Beranda</a></li>
+          <li><a href="#profilSection" class="font-sans lg:text-lg hover:underline">PROFIL</a></li>
+          <li><a href="#kompetensiSection" class="font-sans lg:text-lg hover:underline">Kopetensi Keahlian</a></li>
+          <li><a href="#beritaSection" class="font-sans lg:text-lg hover:underline">Berita</a></li>
+          <li><a href="#hubungikamiSection" class=" font-sans lg:text-lg hover:underline">Hubungi Kami</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Copyright -->
+    <div class="mt-8 text-center text-gray-400 text-sm">
+      &copy; 2025 SMKN 1 Depok. All rights reserved.
+    </div>
+  </div>
+</footer>
+
+  </body>
+<script>
+  //////////////////
+ const btn = document.getElementById("scrollTopBtn");
+
+  window.onscroll = function () {
+    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+      btn.style.opacity = "1";
+    } else {
+      btn.style.opacity = "0";
+    }
+  };
+
+  function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  function toggleMenu() {
+    const menu = document.getElementById('mobileMenu');
+    menu.classList.toggle('hidden');
+  }
+
+  ////////////////////
+  function tampilkanLink(el) {
+    const targetId = el.getAttribute('data-target');
+    const target = document.getElementById(targetId);
+
+    const allDropdowns = document.querySelectorAll('[id^="selector-"]');
+    allDropdowns.forEach(drop => {
+      if (drop.id !== targetId) {
+        drop.classList.add('invisible', 'opacity-0');
+      }
+    });
+
+    target.classList.toggle('opacity-0');
+    target.classList.toggle('invisible');
+  }
+</script>
+</html>
